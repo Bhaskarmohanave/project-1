@@ -1,0 +1,20 @@
+.hidden-menu {
+  width: 50%;
+  display: flex;
+  margin-top: 62.4375px;
+  flex-direction: column;
+  /* border-right: 2px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  transform: translateX(-100%); /* Correct hiding method */
+  transition: transform 0.4s ease-in-out;
+}
+
+.hidden-menu.active {
+  transform: translateX(0); /* Moves into view */
+  /* transition: transform 0.9s ease-in-out; */
+}

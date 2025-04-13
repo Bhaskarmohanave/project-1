@@ -1,0 +1,66 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-1 {
+  width: 200px;
+  height: 150px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-1:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-11 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes the image nicely fill the card */
+  display: block;
+  border-radius: 20px;
+}
+
+.title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: large;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 100;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* improves readability */
+  text-align: center;
+  pointer-events: none; /* so text doesn't block hover */
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  border-radius: 20px;
+}
+
+
+main{
+  margin-top: 700px;
+  padding: 10px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+main.active{
+  opacity: 0;
+}
